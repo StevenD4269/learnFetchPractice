@@ -16,7 +16,7 @@ getUserData(); //now need to do this to f12 and see the information in the resul
 
 //make a function and display it on the DOM
 function displayUser(userData) {
-  // now look at the results array with f12ss
+  // now look at the results array with f12
   // grab the objects you want to use
   const picture = userData.picture.large;
   const name = userData.name.first + " " + userData.name.last;
@@ -49,3 +49,7 @@ function displayUser(userData) {
 }
 
 // now we can displayUser data, go back to line 7 and add the displayUSer(data.results[0]) underneath it
+
+// what if you want to add in many users??
+// You can go to your function and add:
+// function getUserData(userCount=1) and add it to the end of the fetch API url
